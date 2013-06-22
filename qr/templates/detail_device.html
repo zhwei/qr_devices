@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ foo.location }} - {{ foo.sort }} - {{ foo.name }}</title>
+</head>
+<body>
+
+{{ foo.name }} <br>
+{{ foo.location }} <br>
+{{ foo.model }} <br>
+
+
+{% load qr_tags %}
+
+<a href="{{ foo.get_update_url }}">update</a>
+
+</body>
+</html>
